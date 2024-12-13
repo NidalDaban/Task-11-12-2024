@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#5</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px 20px;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4da6ff;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        .header, .footer {
+            font-weight: bold;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .row p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <p>60 GS is starter kit for the CSS Grid.</p>
+        </div>
+
+        <div class="row">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>5</div>
+        </div>
+
+        <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+        <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <div class="footer">
+            <p>Why 60?<br>Because the number 60 is divisible by 2, 3, 4, 5, and 6.</p>
+        </div>
+    </div>
+
+</body>
+</html>

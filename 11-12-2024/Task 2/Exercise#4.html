@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#4</title>
+
+    <style>
+        .calculator
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            background-color: aqua;
+            height: 250px;
+            border: solid 10px aqua;
+            width: 300px;
+            text-align: center;
+        }
+
+        .screen
+        {
+            grid-column: span 4;
+            height: 50px;
+            background-color: white;
+            text-align: right;
+            padding: 5px;
+            font-size: large;
+        }
+        .calculator div
+        {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="screen"></div>
+        <div class="row">1</div>
+        <div class="row">2</div>
+        <div class="row">3</div>
+        <div class="sumOperator">+</div>
+        <div class="row">4</div>
+        <div class="row">5</div>
+        <div class="row">6</div>
+        <div class="subOperator">-</div>
+        <div class="row">7</div>
+        <div class="row">8</div>
+        <div class="row">9</div>
+        <div class="mulOperator">*</div>
+        <div class="clear">C</div>
+        <div class="row">0</div>
+        <div class="row">=</div>
+        <div class="divOperator">/</div>
+    </div>
+    
+</body>
+</html>
